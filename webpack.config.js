@@ -48,14 +48,14 @@ module:{
             test:/\.(woff|woff2)$/,
             use:{
                 loader:'url-loader',
-                options:{
-                    limit:1000,
-                    mimetype:'application/font-woff',
-                    name:'[name].[contenthash].[ext]',
-                    outputPath:'./assets/fonts/',
-                    plubicPath:'../assets/fonts/',
-                    esModules:false
-                }
+                options: {
+                    limit: 10000,
+                    mimetype: "application/font-woff",
+                    name: "[name].[contenthash].[ext]",
+                    outputPath: "./assets/fonts/",
+                    publicPath: "../assets/fonts/",
+                    esModule: false,
+                  },
             }
 
         }
